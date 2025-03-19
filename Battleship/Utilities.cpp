@@ -1,8 +1,6 @@
 #include "Utilities.h"
-#include <windows.h>
-#include <iostream>
 
-using namespace std; // This removes the need for std::
+using namespace std;
 
 void Utilities::ClearScreen() {
     system("CLS");
@@ -23,7 +21,12 @@ void Utilities::PrintCentered(const string& text, int y) {
         screen_width = csbi.srWindow.Right - csbi.srWindow.Left + 1;
     }
 
-    int text_pos = max(0, (screen_width - text.length()) / 2); // Prevent negative position
+    int text_pos = max(0, (screen_width - text.length()) / 2);
     SetCursorPosition(text_pos, y);
     cout << text;
+}
+
+// New function to set text color
+void Utilities::SetColor(int color) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
