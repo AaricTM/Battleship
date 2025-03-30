@@ -1,19 +1,19 @@
-#include "Utilities.h"
+#include "MenuUtils.h"
 
 using namespace std;
 
-void Utilities::ClearScreen() {
+void MenuUtils::ClearScreen() {
     system("CLS");
 }
 
-void Utilities::SetCursorPosition(int x, int y) {
+void MenuUtils::SetCursorPosition(int x, int y) {
     COORD coord;
     coord.X = x;
     coord.Y = y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
-void Utilities::PrintCentered(const string& text, int y) {
+void MenuUtils::PrintCentered(const string& text, int y) {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     int screen_width = 80; // Default width
@@ -27,6 +27,6 @@ void Utilities::PrintCentered(const string& text, int y) {
 }
 
 // New function to set text color
-void Utilities::SetColor(int color) {
+void MenuUtils::SetColor(int color) {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }

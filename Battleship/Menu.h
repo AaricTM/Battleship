@@ -17,13 +17,8 @@ public:
     void DisplayMenu();
     void Run();
     void Start();
-    void StartGame();
-    bool PauseMenu();
-    void RenderGameScreen();
     void OptionMenu();
-    void Options();
-    void DifficultyMenu();
-    void DiffMenu();
+    void DifficultyMenu(); 
     void ShowIntroduction();
     void ShowControls();
 

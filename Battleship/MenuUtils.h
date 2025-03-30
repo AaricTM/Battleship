@@ -1,12 +1,12 @@
-#ifndef UTILITIES_H
-#define UTILITIES_H
+#ifndef MenuUtils_H
+#define MenuUtils_H
 
 #include <iostream>
 #include <windows.h>
 
 using namespace std;
 
-class Utilities {
+class MenuUtils {
 public:
     static void ClearScreen();
     static void SetCursorPosition(int x, int y);
@@ -14,4 +14,4 @@ public:
     static void SetColor(int color); // New function for color handling
 };
 
-#endif // UTILITIES_H
+#endif // MenuUtils_H

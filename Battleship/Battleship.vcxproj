@@ -26,7 +26,7 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Ship.cpp" />
-    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="MenuUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI.h" />
@@ -35,7 +35,7 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Ship.h" />
-    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="MenuUtils.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
